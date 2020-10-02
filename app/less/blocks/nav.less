@@ -2,8 +2,22 @@
 @import "../vars.less";
 
 .nav{
+    height: 100%;  // для того что бы элементы занимали все пространство внутри границы
+    display: flex;
+}
+
+.nav__link{
+    padding: 0.66rem 2rem;
     font-size: 0.93rem;
     color: @black;
     text-transform: uppercase;
     font-weight: 700;
+    text-decoration: none;
+
+    border: 2px solid transparent;
+    border-radius: 20px;
+
+    &:hover{
+        border-color: @black;
+    }
     }
