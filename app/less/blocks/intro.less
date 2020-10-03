@@ -1,8 +1,14 @@
 // main: ../style.less
 @import "../vars.less";
 
+.intro{
+    padding-top: 100px;
+}
+
 .intro__inner{
     display: flex;
+    border-bottom: 1px solid rgba(@gray, 30%);
+    
 }
 
 .intro__content{
@@ -16,9 +22,16 @@ width: 50%;
 }
 
 .intro__title{
+    margin-bottom: 5px;
     font-size: 3rem;
     color: @black;
     font-weight: 700;
+}
+
+.intro__text{
+    font-size: 1.2rem;
+    color: rgba(@black, 70%);
+
 }
 
 .intro__photo{
