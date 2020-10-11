@@ -4,7 +4,7 @@
  .btn{ //стили для кнопки и для кнопко-ссылки чтоб они были похожи)
     display: inline-block;
     vertical-align: top;
-    padding: 1rem 1.8rem;
+    padding: 1.05em 1.7em;  // em зависит от родителя тк у кнопки размер шрифта 16 (1.06rem) то 1em =16  а не 15 как rem
     min-width: 170px;
 
     font-size: 1.06rem;
@@ -14,7 +14,7 @@
     text-transform: uppercase;
 
     border: 1px solid @gray;
-    border-radius: 30px;
+    border-radius: 1.8em;// тоже что и с padding
     background: none;
     cursor: pointer;
     text-decoration: none;
@@ -35,5 +35,17 @@
     + .btn{
         margin-left: 1rem;
     }
+     
+// ++++-Modificators-++++
+
+&--sm{
+    font-size: .94rem; 
+    font-weight: 700;
+    border-width: 2px;
+    padding: .7em 1.1em;
 
 }
+
+}
+
+
